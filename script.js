@@ -182,10 +182,6 @@ function kasa_guncelle()
     return guncelle;
 }
 
-/////////// oyunu başlattım ////////////////
-kartlar_init();
-menu();
-
 /////////// bekleme fonksiyon /////////////////
 function sleep(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -352,4 +348,13 @@ function game_over(sec){
         menu();
     }
 
+}
+
+/////////// oyunu başlattım ////////////////
+if(window.innerWidth > 600)
+{
+    kartlar_init();
+    menu();    
+}else{
+    document.getElementById("mobile").textContent = "ekran boyutu çok küçük, böyle olmaz :(";
 }
