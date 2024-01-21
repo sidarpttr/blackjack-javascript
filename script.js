@@ -248,6 +248,7 @@ function main(){
         ////// BUTON FONKSİYONLARI ///////
         buton1.onclick = ()=>{
             game.kart_iste();
+            buton3.style.display = "none";
         }
         buton2.onclick = async function(){
             kasaAc();
