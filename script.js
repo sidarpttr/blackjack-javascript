@@ -356,5 +356,6 @@ if(window.innerWidth > 600)
     kartlar_init();
     menu();    
 }else{
+    alert("ekran boyutu küçük, böyle olmaz :(");
     document.getElementById("mobile").textContent = "ekran boyutu çok küçük, böyle olmaz :(";
 }
